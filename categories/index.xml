@@ -1,45 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on ExampleSite</title>
-    <link>https://examplesite.com/categories/</link>
-    <description>Recent content in Categories on ExampleSite</description>
+    <title>Categories on 无涯·学者 的Blog</title>
+    <link>https://developerTxy.github.io/categories/</link>
+    <description>Recent content in Categories on 无涯·学者 的Blog</description>
     <image>
-      <title>ExampleSite</title>
-      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <title>无涯·学者 的Blog</title>
+      <url>https://developerTxy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://developerTxy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 17 Dec 2023 20:28:42 +0800</lastBuildDate>
-    <atom:link href="https://examplesite.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://developerTxy.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>分类1</title>
-      <link>https://examplesite.com/categories/%E5%88%86%E7%B1%BB1/</link>
+      <link>https://developerTxy.github.io/categories/%E5%88%86%E7%B1%BB1/</link>
       <pubDate>Sun, 17 Dec 2023 20:28:42 +0800</pubDate>
-      <guid>https://examplesite.com/categories/%E5%88%86%E7%B1%BB1/</guid>
+      <guid>https://developerTxy.github.io/categories/%E5%88%86%E7%B1%BB1/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>分类2</title>
-      <link>https://examplesite.com/categories/%E5%88%86%E7%B1%BB2/</link>
+      <link>https://developerTxy.github.io/categories/%E5%88%86%E7%B1%BB2/</link>
       <pubDate>Sun, 17 Dec 2023 20:28:42 +0800</pubDate>
-      <guid>https://examplesite.com/categories/%E5%88%86%E7%B1%BB2/</guid>
+      <guid>https://developerTxy.github.io/categories/%E5%88%86%E7%B1%BB2/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>category</title>
-      <link>https://examplesite.com/categories/category/</link>
+      <link>https://developerTxy.github.io/categories/category/</link>
       <pubDate>Wed, 13 Dec 2023 22:53:00 +0800</pubDate>
-      <guid>https://examplesite.com/categories/category/</guid>
+      <guid>https://developerTxy.github.io/categories/category/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>subcategory</title>
-      <link>https://examplesite.com/categories/subcategory/</link>
+      <link>https://developerTxy.github.io/categories/subcategory/</link>
       <pubDate>Wed, 13 Dec 2023 22:53:00 +0800</pubDate>
-      <guid>https://examplesite.com/categories/subcategory/</guid>
+      <guid>https://developerTxy.github.io/categories/subcategory/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
   </channel>
 </rss>

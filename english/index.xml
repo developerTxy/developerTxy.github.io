@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Englishes on ExampleSite</title>
-    <link>https://examplesite.com/english/</link>
-    <description>Recent content in Englishes on ExampleSite</description>
+    <title>Englishes on 无涯·学者 的Blog</title>
+    <link>https://developerTxy.github.io/english/</link>
+    <description>Recent content in Englishes on 无涯·学者 的Blog</description>
     <image>
-      <title>ExampleSite</title>
-      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <title>无涯·学者 的Blog</title>
+      <url>https://developerTxy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://developerTxy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 17 Dec 2023 20:28:42 +0800</lastBuildDate>
-    <atom:link href="https://examplesite.com/english/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://developerTxy.github.io/english/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First</title>
-      <link>https://examplesite.com/english/post/chinest/first/</link>
+      <link>https://developerTxy.github.io/english/post/chinest/first/</link>
       <pubDate>Sun, 17 Dec 2023 20:28:42 +0800</pubDate>
-      <guid>https://examplesite.com/english/post/chinest/first/</guid>
+      <guid>https://developerTxy.github.io/english/post/chinest/first/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title></title>
-      <link>https://examplesite.com/english/search/</link>
+      <link>https://developerTxy.github.io/english/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://examplesite.com/english/search/</guid>
+      <guid>https://developerTxy.github.io/english/search/</guid>
       <description>title: &amp;ldquo;Search&amp;rdquo; date: &amp;hellip; draft: false layout: search</description>
+      <content:encoded><![CDATA[<p>title: &ldquo;Search&rdquo;
+date: &hellip;
+draft: false
+layout: search</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>
