@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chineses on ExampleSite</title>
+    <link>https://examplesite.com/chinese/</link>
+    <description>Recent content in Chineses on ExampleSite</description>
+    <image>
+      <title>ExampleSite</title>
+      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://examplesite.com/chinese/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://examplesite.com/chinese/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://examplesite.com/chinese/search/</guid>
+      <description>title: &amp;ldquo;Search&amp;rdquo; date: &amp;hellip; draft: false layout: search</description>
+    </item>
+  </channel>
+</rss>
