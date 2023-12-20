@@ -11,8 +11,33 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Dec 2023 20:28:42 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 18 Dec 2023 22:41:35 +0800</lastBuildDate>
     <atom:link href="https://developerTxy.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://developerTxy.github.io/posts/hugo/</link>
+      <pubDate>Mon, 18 Dec 2023 22:41:35 +0800</pubDate>
+      <guid>https://developerTxy.github.io/posts/hugo/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://developerTxy.github.io/about/</link>
+      <pubDate>Mon, 18 Dec 2023 22:12:11 +0800</pubDate>
+      <guid>https://developerTxy.github.io/about/</guid>
+      <description></description>
+      <content:encoded><![CDATA[<!-- raw HTML omitted -->
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Demo</title>
+      <link>https://developerTxy.github.io/demo/</link>
+      <pubDate>Sun, 17 Dec 2023 22:42:20 +0800</pubDate>
+      <guid>https://developerTxy.github.io/demo/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
     <item>
       <title>First</title>
       <link>https://developerTxy.github.io/english/post/chinest/first/</link>
