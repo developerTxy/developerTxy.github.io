@@ -11,15 +11,18 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Dec 2023 22:41:35 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Dec 2023 15:32:46 +0800</lastBuildDate>
     <atom:link href="https://developerTxy.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo</title>
-      <link>https://developerTxy.github.io/posts/hugo/</link>
-      <pubDate>Mon, 18 Dec 2023 22:41:35 +0800</pubDate>
-      <guid>https://developerTxy.github.io/posts/hugo/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
+      <title>Hugo问题记录</title>
+      <link>https://developerTxy.github.io/post/tech/hugonotes/</link>
+      <pubDate>Sun, 24 Dec 2023 15:32:46 +0800</pubDate>
+      <guid>https://developerTxy.github.io/post/tech/hugonotes/</guid>
+      <description>hugo 建站问题记录</description>
+      <content:encoded><![CDATA[<!-- raw HTML omitted -->
+<h3 id="heading"></h3>
+<p>hugo content 的目录 在config配置文件中 路径全部用（英文）小写，包含大写字母路径找不到</p>
+]]></content:encoded>
     </item>
     <item>
       <title>About</title>
@@ -29,30 +32,6 @@
       <description></description>
       <content:encoded><![CDATA[<!-- raw HTML omitted -->
 ]]></content:encoded>
-    </item>
-    <item>
-      <title>Demo</title>
-      <link>https://developerTxy.github.io/demo/</link>
-      <pubDate>Sun, 17 Dec 2023 22:42:20 +0800</pubDate>
-      <guid>https://developerTxy.github.io/demo/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    <item>
-      <title>First</title>
-      <link>https://developerTxy.github.io/english/post/chinest/first/</link>
-      <pubDate>Sun, 17 Dec 2023 20:28:42 +0800</pubDate>
-      <guid>https://developerTxy.github.io/english/post/chinest/first/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    <item>
-      <title>Myfirst Post</title>
-      <link>https://developerTxy.github.io/post/myfirst-post/</link>
-      <pubDate>Wed, 13 Dec 2023 22:53:00 +0800</pubDate>
-      <guid>https://developerTxy.github.io/post/myfirst-post/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title></title>
