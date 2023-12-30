@@ -11,8 +11,286 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 24 Dec 2023 15:32:46 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Dec 2023 19:54:48 +0800</lastBuildDate>
     <atom:link href="https://developerTxy.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>有好沟通</title>
+      <link>https://developerTxy.github.io/post/booksnotes/%E5%8F%8B%E5%A5%BD%E6%B2%9F%E9%80%9A/</link>
+      <pubDate>Fri, 29 Dec 2023 19:54:48 +0800</pubDate>
+      <guid>https://developerTxy.github.io/post/booksnotes/%E5%8F%8B%E5%A5%BD%E6%B2%9F%E9%80%9A/</guid>
+      <description>伤人的沟通方式 ###反问句 沟通中，反问句是非常容易激起对抗情绪的，因为反问代表了质疑，蔑视，责备的感觉 ；如果你想好好沟通那就改点经常反问的习</description>
+      <content:encoded><![CDATA[<!-- raw HTML omitted -->
+<h2 id="伤人的沟通方式">伤人的沟通方式</h2>
+<p>###反问句
+沟通中，反问句是非常容易激起对抗情绪的，因为反问代表了质疑，蔑视，责备的感觉 ；如果你想好好沟通那就改点经常反问的习惯，   ”难道你之前没有做过吗？ 这你都不会吗？“</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>git撤销命令</title>
+      <link>https://developerTxy.github.io/post/tech/gitlist/git_%E6%9C%AC%E5%9C%B0%E6%92%A4%E9%94%80%E8%BF%9C%E7%A8%8B%E6%92%A4%E9%94%80%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Sun, 24 Dec 2023 15:32:46 +0800</pubDate>
+      <guid>https://developerTxy.github.io/post/tech/gitlist/git_%E6%9C%AC%E5%9C%B0%E6%92%A4%E9%94%80%E8%BF%9C%E7%A8%8B%E6%92%A4%E9%94%80%E8%AF%A6%E8%A7%A3/</guid>
+      <description>git 各种情况下的撤销操作</description>
+      <content:encoded><![CDATA[<p>修改了本地的代码，然后使用：
+git add file git commit -m &lsquo;修改原因&rsquo;
+执行commit后，还没执行push时，想要撤销这次的commit，该怎么办？
+解决方案： 使用命令：
+git reset &ndash;soft HEAD^
+这样就成功撤销了commit，如果想要连着add也撤销的话，&ndash;soft改为&ndash;hard（删除工作空间的改动代码）。
+命令详解：
+HEAD^ 表示上一个版本，即上一次的commit，也可以写成HEAD~1 如果进行两次的commit，想要都撤回，可以使用HEAD~2
+&ndash;soft 不删除工作空间的改动代码 ，撤销commit，不撤销git add file
+&ndash;hard 删除工作空间的改动代码，撤销commit且撤销add
+另外一点，如果commit注释写错了，先要改一下注释，有其他方法也能实现，如：
+git commit &ndash;amend 这时候会进入vim编辑器，修改完成你要的注释后保存即可。
+为了搞清楚原理，我画流程图，找到了一个好的工具：https://www.draw.io/</p>
+<h4 id="git的工作流">git的工作流</h4>
+<p>工作区：即自己当前分支所修改的代码，git add xx 之前的！不包括 git add xx 和 git commit xxx 之后的。
+暂存区：已经 git add xxx 进去，且未 git commit xxx 的。
+本地分支：已经git commit -m xxx 提交到本地分支的。
+<img loading="lazy" src="https://cdn.nlark.com/yuque/0/2023/jpeg/12487912/1703246237651-1126389f-31ad-42b9-943d-a0242a3de06c.jpeg#averageHue=%23f6f6f6&amp;clientId=u432bbeaf-14f6-4&amp;from=paste&amp;id=u81f5fa24&amp;originHeight=1166&amp;originWidth=802&amp;originalType=url&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;taskId=ud2019a73-8f72-472d-87cc-c03d67f1f31&amp;title=" alt=""  />
+
+基本原理如下：
+<img loading="lazy" src="https://cdn.nlark.com/yuque/0/2023/jpeg/12487912/1703246237658-a60219d4-46f9-402a-9e66-e7419f724b0e.jpeg#averageHue=%23f6f6f6&amp;clientId=u432bbeaf-14f6-4&amp;from=paste&amp;id=u760098fc&amp;originHeight=829&amp;originWidth=1080&amp;originalType=url&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;taskId=ue2a2a86b-6254-4bc3-8cde-c660917ed88&amp;title=" alt=""  />
+</p>
+<h4 id="代码回滚">代码回滚</h4>
+<p>在上传代码到远程仓库的时候，不免会出现问题，任何过程都有可能要回滚代码：
+1、在工作区的代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">checkout</span> <span class="o">--</span> <span class="nx">a</span><span class="p">.</span><span class="nx">txt</span>   <span class="err">#</span> <span class="nx">丢弃某个文件</span><span class="err">，</span><span class="nx">或者</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">checkout</span> <span class="o">--</span> <span class="p">.</span>       <span class="err">#</span> <span class="nx">丢弃全部</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意：git checkout – . 丢弃全部，也包括：新增的文件会被删除、删除的文件会恢复回来、修改的文件会回去。这几个前提都说的是，回到暂存区之前的样子。对之前保存在暂存区里的代码不会有任何影响。对commit提交到本地分支的代码就更没影响了。当然，如果你之前压根都没有暂存或commit，那就是回到你上次pull下来的样子了。
+2、代码git add到缓存区，并未commit提交</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">reset</span> <span class="nx">HEAD</span> <span class="p">.</span>  <span class="nx">或者</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">reset</span> <span class="nx">HEAD</span> <span class="nx">a</span><span class="p">.</span><span class="nx">txt</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个命令仅改变暂存区，并不改变工作区，这意味着在无任何其他操作的情况下，工作区中的实际文件同该命令运行之前无任何变化
+3、git commit到本地分支、但没有git push到远程</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">log</span> <span class="err">#</span> <span class="nx">得到你需要回退一次提交的commit</span> <span class="nx">id</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">reset</span> <span class="o">--</span><span class="nx">hard</span> <span class="o">&lt;</span><span class="nx">commit_id</span><span class="o">&gt;</span>  <span class="err">#</span> <span class="nx">回到其中你想要的某个版</span>
+</span></span><span class="line"><span class="cl"><span class="nx">或者</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">reset</span> <span class="o">--</span><span class="nx">hard</span> <span class="nx">HEAD</span><span class="o">^</span>  <span class="err">#</span> <span class="nx">回到最新的一次提交</span>
+</span></span><span class="line"><span class="cl"><span class="nx">或者</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">reset</span> <span class="nx">HEAD</span><span class="o">^</span>  <span class="err">#</span> <span class="nx">此时代码保留</span><span class="err">，</span><span class="nx">回到</span> <span class="nx">git</span> <span class="nx">add</span> <span class="nx">之前</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>4、git push把修改提交到远程仓库 1）通过git reset是直接删除指定的commit</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">log</span> <span class="err">#</span> <span class="nx">得到你需要回退一次提交的commit</span> <span class="nx">id</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">reset</span> <span class="o">--</span><span class="nx">hard</span> <span class="o">&lt;</span><span class="nx">commit_id</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">push</span> <span class="nx">origin</span> <span class="nx">HEAD</span> <span class="o">--</span><span class="nx">force</span> <span class="err">#</span> <span class="nx">强制提交一次</span><span class="err">，</span><span class="nx">之前错误的提交就从远程仓库删除</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>2）通过git revert 用一次新的commit来回滚之前的commit</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">log</span> <span class="err">#</span> <span class="nx">得到你需要回退一次提交的commit</span> <span class="nx">id</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">revert</span> <span class="o">&lt;</span><span class="nx">commit_id</span><span class="o">&gt;</span>  <span class="err">#</span> <span class="nx">撤销指定的版本</span><span class="err">，</span><span class="nx">撤销也会作为一次提交进行保存</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>3） git revert 和 git reset的区别</p>
+<ul>
+<li>git revert 用一次新的commit来回滚之前的commit，此次提交之前的commit都会被保留；</li>
+<li>git reset 回到某次提交，提交及之前的commit都会被保留，但是此commit id之后的修改都会被删除</li>
+</ul>
+<p>开发过程中，你肯定会遇到这样的场景：
+场景一：
+糟了，我刚把不想要的代码，commit到本地仓库中了，但是还没有做push操作！
+场景二：
+彻底完了，刚线上更新的代码出现问题了，需要还原这次提交的代码！
+场景三：
+刚才我发现之前的某次提交太愚蠢了，现在想要干掉它！
+撤销 上述场景一，在未进行git push前的所有操作，都是在“本地仓库”中执行的。我们暂且将“本地仓库”的代码还原操作叫做“撤销”！
+情况一：文件被修改了，但未执行git add操作(working tree内撤销)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">checkout</span> <span class="nx">fileName</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">checkout</span> <span class="p">.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>情况二：同时对多个文件执行了git add操作，但本次只想提交其中一部分文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">$</span> <span class="nx">git</span> <span class="nx">add</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl"><span class="nx">$</span> <span class="nx">git</span> <span class="nx">status</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="取消暂存">取消暂存</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">$</span> <span class="nx">git</span> <span class="nx">reset</span> <span class="nx">HEAD</span> <span class="o">&lt;</span><span class="nx">filename</span><span class="o">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>情况三：文件执行了git add操作，但想撤销对其的修改（index内回滚）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="err">#</span> <span class="nx">取消暂存</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">reset</span> <span class="nx">HEAD</span> <span class="nx">fileName</span>
+</span></span><span class="line"><span class="cl"><span class="err">#</span> <span class="nx">撤销修改</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">checkout</span> <span class="nx">fileName</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>情况四：修改的文件已被git commit，但想再次修改不再产生新的Commit</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="err">#</span> <span class="nx">修改最后一次提交</span>
+</span></span><span class="line"><span class="cl"><span class="nx">$</span> <span class="nx">git</span> <span class="nx">add</span> <span class="nx">sample</span><span class="p">.</span><span class="nx">txt</span>
+</span></span><span class="line"><span class="cl"><span class="nx">$</span> <span class="nx">git</span> <span class="nx">commit</span> <span class="o">--</span><span class="nx">amend</span> <span class="o">-</span><span class="nx">m</span><span class="s2">&#34;说明&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>情况五：已在本地进行了多次git commit操作，现在想撤销到其中某次Commit</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">reset</span> <span class="p">[</span><span class="o">--</span><span class="nx">hard</span><span class="o">|</span><span class="nx">soft</span><span class="o">|</span><span class="nx">mixed</span><span class="o">|</span><span class="nx">merge</span><span class="o">|</span><span class="nx">keep</span><span class="p">]</span> <span class="p">[</span><span class="nx">commit</span><span class="o">|</span><span class="nx">HEAD</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="回滚">回滚</h4>
+<p>上述场景二，已进行git push，即已推送到“远程仓库”中。我们将已被提交到“远程仓库”的代码还原操作叫做“回滚”！注意：对远程仓库做回滚操作是有风险的，需提前做好备份和通知其他团队成员！
+如果你每次更新线上，都会打tag，那恭喜你，你可以很快的处理上述场景二的情况</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">checkout</span> <span class="o">&lt;</span><span class="nx">tag</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">如果你回到当前HEAD指向</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">checkout</span> <span class="o">&lt;</span><span class="nx">branch_name</span><span class="o">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>情况一：撤销指定文件到指定版本</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="err">#</span> <span class="nx">查看指定文件的历史版本</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">log</span> <span class="o">&lt;</span><span class="nx">filename</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="err">#</span> <span class="nx">回滚到指定commitID</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">checkout</span> <span class="o">&lt;</span><span class="nx">commitID</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nx">filename</span><span class="o">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>情况二：删除最后一次远程提交
+方式一：使用revert</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">revert</span> <span class="nx">HEAD</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">push</span> <span class="nx">origin</span> <span class="nx">master</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>方式二：使用reset</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">reset</span> <span class="o">--</span><span class="nx">hard</span> <span class="nx">HEAD</span><span class="o">^</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">push</span> <span class="nx">origin</span> <span class="nx">master</span> <span class="o">-</span><span class="nx">f</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>二者区别：
+revert是放弃指定提交的修改，但是会生成一次新的提交，需要填写提交注释，以前的历史记录都在； reset是指将HEAD指针指到指定提交，历史记录中不会出现放弃的提交记录。 情况三：回滚某次提交</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="err">#</span> <span class="nx">找到要回滚的commitID</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">log</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">revert</span> <span class="nx">commitID</span>
+</span></span><span class="line"><span class="cl"><span class="nx">删除某次提交</span>
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">log</span> <span class="o">--</span><span class="nx">oneline</span> <span class="o">-</span><span class="nx">n5</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">rebase</span> <span class="o">-</span><span class="nx">i</span> <span class="s2">&#34;commit id&#34;</span><span class="o">^</span>
+</span></span><span class="line"><span class="cl"><span class="nx">注意</span><span class="err">：</span><span class="nx">需要注意最后的</span><span class="o">^</span><span class="nx">号</span><span class="err">，</span><span class="nx">意思是commit</span> <span class="nx">id的前一次提交</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">rebase</span> <span class="o">-</span><span class="nx">i</span> <span class="s2">&#34;5b3ba7a&#34;</span><span class="o">^</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>代码提交，谁都不希望撤销或者回滚，有时候又迫不得已。掌握这些命令，可以提交代码无忧！</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Hugo问题记录</title>
       <link>https://developerTxy.github.io/post/tech/hugonotes/</link>
