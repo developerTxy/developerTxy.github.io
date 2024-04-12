@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>IT技术 on 无涯·学者 的Blog</title>
-    <link>https://developerTxy.github.io/post/tech/</link>
-    <description>Recent content in IT技术 on 无涯·学者 的Blog</description>
+    <title>note on 无涯·学者 的Blog</title>
+    <link>https://developerTxy.github.io/tags/note/</link>
+    <description>Recent content in note on 无涯·学者 的Blog</description>
     <image>
       <title>无涯·学者 的Blog</title>
       <url>https://developerTxy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 12 Apr 2024 18:56:00 +0800</lastBuildDate>
-    <atom:link href="https://developerTxy.github.io/post/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://developerTxy.github.io/tags/note/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我遵守的coding规则-血泪史</title>
       <link>https://developerTxy.github.io/post/tech/mycodingrules/</link>
@@ -23,17 +23,6 @@
 1:一定遵守业界通用的开发规范;
 2:定义的变量，接口文档的变量，一定要复制粘贴，不要手打！！！！！，不然你可能找半个多小时bug。</p>
 <!-- raw HTML omitted -->
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Hugo问题记录</title>
-      <link>https://developerTxy.github.io/post/tech/hugonotes/</link>
-      <pubDate>Sun, 24 Dec 2023 15:32:46 +0800</pubDate>
-      <guid>https://developerTxy.github.io/post/tech/hugonotes/</guid>
-      <description>hugo 建站问题记录</description>
-      <content:encoded><![CDATA[<!-- raw HTML omitted -->
-<h3 id="heading"></h3>
-<p>hugo content 的目录 在config配置文件中 路径全部用（英文）小写，包含大写字母路径找不到</p>
 ]]></content:encoded>
     </item>
   </channel>

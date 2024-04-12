@@ -11,8 +11,20 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 24 Dec 2023 15:32:46 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 12 Apr 2024 18:56:00 +0800</lastBuildDate>
     <atom:link href="https://developerTxy.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我遵守的coding规则-血泪史</title>
+      <link>https://developerTxy.github.io/post/tech/mycodingrules/</link>
+      <pubDate>Fri, 12 Apr 2024 18:56:00 +0800</pubDate>
+      <guid>https://developerTxy.github.io/post/tech/mycodingrules/</guid>
+      <description>敲代码过程中记录的一些准则，避免bug的守则</description>
+      <content:encoded><![CDATA[<p>##编写代码遵守规则
+1:一定遵守业界通用的开发规范;
+2:定义的变量，接口文档的变量，一定要复制粘贴，不要手打！！！！！，不然你可能找半个多小时bug。</p>
+<!-- raw HTML omitted -->
+]]></content:encoded>
+    </item>
     <item>
       <title>git撤销命令</title>
       <link>https://developerTxy.github.io/post/tech/gitlist/git_%E6%9C%AC%E5%9C%B0%E6%92%A4%E9%94%80%E8%BF%9C%E7%A8%8B%E6%92%A4%E9%94%80%E8%AF%A6%E8%A7%A3/</link>

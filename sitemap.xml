@@ -2,25 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://developerTxy.github.io/categories/booksnotes/</loc>
-    <lastmod>2023-12-29T19:54:48+08:00</lastmod>
+    <loc>https://developerTxy.github.io/categories/codingrules/</loc>
+    <lastmod>2024-04-12T18:56:00+08:00</lastmod>
+  </url><url>
+    <loc>https://developerTxy.github.io/post/tech/</loc>
+    <lastmod>2024-04-12T18:56:00+08:00</lastmod>
+  </url><url>
+    <loc>https://developerTxy.github.io/tags/note/</loc>
+    <lastmod>2024-04-12T18:56:00+08:00</lastmod>
   </url><url>
     <loc>https://developerTxy.github.io/tags/</loc>
-    <lastmod>2023-12-29T19:54:48+08:00</lastmod>
+    <lastmod>2024-04-12T18:56:00+08:00</lastmod>
+  </url><url>
+    <loc>https://developerTxy.github.io/categories/tech/</loc>
+    <lastmod>2024-04-12T18:56:00+08:00</lastmod>
   </url><url>
     <loc>https://developerTxy.github.io/categories/</loc>
+    <lastmod>2024-04-12T18:56:00+08:00</lastmod>
+  </url><url>
+    <loc>https://developerTxy.github.io/post/tech/mycodingrules/</loc>
+    <lastmod>2024-04-12T18:56:00+08:00</lastmod>
+  </url><url>
+    <loc>https://developerTxy.github.io/post/</loc>
+    <lastmod>2024-04-12T18:56:00+08:00</lastmod>
+  </url><url>
+    <loc>https://developerTxy.github.io/</loc>
+    <lastmod>2024-04-12T18:56:00+08:00</lastmod>
+  </url><url>
+    <loc>https://developerTxy.github.io/categories/booksnotes/</loc>
     <lastmod>2023-12-29T19:54:48+08:00</lastmod>
   </url><url>
     <loc>https://developerTxy.github.io/post/booksnotes/%E5%8F%8B%E5%A5%BD%E6%B2%9F%E9%80%9A/</loc>
     <lastmod>2023-12-29T19:54:48+08:00</lastmod>
   </url><url>
     <loc>https://developerTxy.github.io/tags/%E5%A5%BD%E5%A5%BD%E8%AF%B4%E8%AF%9D/</loc>
-    <lastmod>2023-12-29T19:54:48+08:00</lastmod>
-  </url><url>
-    <loc>https://developerTxy.github.io/post/</loc>
-    <lastmod>2023-12-29T19:54:48+08:00</lastmod>
-  </url><url>
-    <loc>https://developerTxy.github.io/</loc>
     <lastmod>2023-12-29T19:54:48+08:00</lastmod>
   </url><url>
     <loc>https://developerTxy.github.io/post/booksnotes/</loc>
@@ -42,12 +57,6 @@
     <lastmod>2023-12-24T15:32:46+08:00</lastmod>
   </url><url>
     <loc>https://developerTxy.github.io/post/tech/hugonotes/</loc>
-    <lastmod>2023-12-24T15:32:46+08:00</lastmod>
-  </url><url>
-    <loc>https://developerTxy.github.io/post/tech/</loc>
-    <lastmod>2023-12-24T15:32:46+08:00</lastmod>
-  </url><url>
-    <loc>https://developerTxy.github.io/categories/tech/</loc>
     <lastmod>2023-12-24T15:32:46+08:00</lastmod>
   </url><url>
     <loc>https://developerTxy.github.io/tags/%E6%92%A4%E9%94%80%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4/</loc>
